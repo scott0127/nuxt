@@ -1,0 +1,1 @@
+import{r as c}from"./entry.9855f64d.js";function m(){const t=c(""),n=()=>{const e=new Date,r=e.getHours(),o=e.getMinutes(),s=e.getSeconds();t.value=r+":"+(o<10?"0":"")+o+":"+(s<10?"0":"")+s};return{now:t,updateTime:n,startClock:()=>{setInterval(n,1e3)},returnNow:()=>t}}export{m as u};
