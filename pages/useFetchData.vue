@@ -24,6 +24,9 @@
     >
       重新獲取資料
     </button>
+    <p class="mt-4 text-3xl font-semibold text-blue-500">
+      性別:{{data2}}
+    </p>
   </div>
 </template>
 
@@ -31,4 +34,5 @@
 const { data, pending, error, refresh } = await useFetch('/api/about', {
   pick: ['name', 'gender', 'counter']
 })
+const { data2 } = await useFetch('https://api.disneyapi.dev/character')
 </script>

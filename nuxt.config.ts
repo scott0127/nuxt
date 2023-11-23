@@ -5,8 +5,8 @@ export default defineNuxtConfig({
     '@/assets/css/main.css'
   ],
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/nuxt3-generate/' : '/',
-    buildAssetsDir: 'assets'
+    baseURL: process.env.NODE_ENV === 'production' ? '/nuxt/' : '/',
+    buildAssetsDir: '/assets/_nuxt'
   },
   modules: ['@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
