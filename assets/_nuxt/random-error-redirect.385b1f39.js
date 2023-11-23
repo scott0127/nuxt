@@ -1,1 +1,0 @@
-import{J as o,K as t}from"./entry.924f740e.js";const e=o(()=>{if(Math.random()>.5)return console.log("來自random-direct中間件，重新導向至 /count"),t({statusCode:877,statusMessage:"不可以進入逮斯",fatal:!0});console.log("啥都沒發生by 中間件")});export{e as default};
