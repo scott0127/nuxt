@@ -1,1 +1,0 @@
-import{g as o,h as t}from"./entry.be2e67c1.js";import"./swiper-vue.797db16b.js";const r=o(()=>{if(Math.random()>.5)return console.log("來自random-direct中間件，重新導向至 /count"),t({statusCode:877,statusMessage:"不可以進入逮斯",fatal:!0});console.log("啥都沒發生by 中間件")});export{r as default};
