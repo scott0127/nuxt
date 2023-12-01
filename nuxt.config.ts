@@ -10,7 +10,11 @@ export default defineNuxtConfig({
   },
   modules: ['@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
+    '@vueuse/nuxt',
     'nuxt-icon',
     '@pinia/nuxt',
-    '@pinia-plugin-persistedstate/nuxt']
+    '@pinia-plugin-persistedstate/nuxt', 'nuxt-swiper'],
+  swiper: {
+    modules: ['navigation', 'pagination', 'effect-creative']
+  }
 })

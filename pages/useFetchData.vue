@@ -25,7 +25,7 @@
       重新獲取資料
     </button>
     <p class="mt-4 text-3xl font-semibold text-blue-500">
-      性別:{{data2}}
+      性別:{{ data2 }}
     </p>
   </div>
 </template>

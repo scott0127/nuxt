@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center">
+  <div class="flex flex-col items-center h-screen overflow-y-auto">
     <span class="mt-8 text-4xl text-gray-700">{{ count }}</span>
     <button
       class="my-6 rounded-sm bg-sky-600 py-2 px-4 text-base font-medium text-white hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
@@ -28,3 +28,14 @@ const { count, increament } = useCounter()
 const { now, startClock } = useTime()
 const randNumber = useState('rand', () => Math.round(Math.random() * 1000))
 </script>
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.h-screen {
+  min-height: 100vh;
+}
+</style>
