@@ -1,14 +1,16 @@
 <template>
   <div
+    ref="navigationBoss"
     class="border-b-4 border-gray-300 bg-gray-100
-  overflow-hidden border-solid"
+  overflow-hidden border-solid duration-300 relative "
     style="background-color: white;"
   >
-    <div class="containerForCat move absolute hidden md:block">
-      <div class="cat walking absolute" />
+    <div class="containerForCat move hidden md:block">
+      <div class="cat walking" />
     </div>
+    <DogComponent ref="doggy" class="hidden md:block move-dog dog" />
     <div class="flex justify-between items-center px-4 py-8 md:px-6 md:py-8 mb-0">
-      <div class="flex items-center absolute left-40">
+      <div ref="mic" class="flex items-center absolute left-40">
         <NuxtLink to="/" class="NuxtLink text-xl font-bold" style="color: #B0A695;">
           回到米奇網首頁
         </NuxtLink>
@@ -46,10 +48,28 @@
 </template>
 
 <script>
+import debounce from 'lodash/debounce'
 export default {
   data () {
     return {
       isMobileMenuOpen: false
+    }
+  },
+  mounted () {
+    this.handleDebouncedScroll = debounce(this.handleScroll, 100)
+    window.addEventListener('scroll', this.handleDebouncedScroll)
+  },
+  onMounted () {
+  },
+  methods: {
+    handleScroll (_event) {
+      if (window.scrollY === 0) {
+        this.$refs.navigationBoss.classList.add('md:py-10')
+      } else {
+        this.$refs.navigationBoss.classList.remove('md:py-10')
+      }
+      rolling = (window.scrollY > 0)
+      console.log(window.scrollY)
     }
   }
 }
@@ -72,22 +92,25 @@ ul li a:hover{
     transition: 0.3s;
 }
 .containerForCat {
-  width: 100%;
-  height: 100%;
+  scale: 0.3;
+  position: absolute;
+  bottom: -6%;
 }
 .cat{
   width: 400px;
   height:200px;
-  margin: 50px auto 0;
-  top: -105px;
-  scale: 0.3;
+  position: absolute;
+  bottom: 80%;
 }
 .walking{
-  animation: catwalk 0.5s steps(12) infinite;
+  animation: catwalk 1s steps(12) infinite;
   background: url('~/assets/images/cat_tiles.png') 0 0 no-repeat;
 }
 .move{
-  animation: move_ani 20s  infinite;
+  animation:   move_ani 8s  infinite;
+}
+.move-dog{
+  animation:  move_ani_dog 20s  infinite;
 }
 @keyframes catwalk {
   from {
@@ -103,6 +126,14 @@ ul li a:hover{
   }
   to{
     margin-left: -15%;
+  }
+}
+@keyframes move_ani_dog{
+  from {
+    margin-left: 50%;
+  }
+  to{
+    margin-left: -55%;
   }
 }
 </style>

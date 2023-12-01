@@ -2,11 +2,12 @@
 import { useMouse } from '@vueuse/core'
 
 const { x, y } = useMouse()
+
 </script>
 
 <template>
   <div class="bg-sky-100 flex flex-col overflow-hidden relative" @scroll="checkScrollState">
-    <div ref="el">
+    <div>
       <MyNavigate class="md:fixed md:w-screen md:z-50" />
       <div
         class="absolute rounded-full
