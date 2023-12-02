@@ -39,15 +39,7 @@
 
       <div class="footer-right hidden sm:block border-l-8 border-double pl-4 sm:pl-14 ml-8 mt-8 h-4/5">
         <div class="flex flex-col gap-2 whitespace-nowrap mt-6">
-          <h4 class="text-lg font-bold mb-4">
-            If you have questions
-          </h4>
-          <h4 class="text-lg font-bold mb-4">
-            contact me at:
-          </h4>
-          <h4 class="text-lg font-bold mb-4">
-            scott5497ify@gmail.com
-          </h4>
+          <UIComponentMailInput />
         </div>
       </div>
     </div>

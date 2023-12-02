@@ -11,14 +11,27 @@ const { x, y } = useMouse()
       <MyNavigate class="md:fixed md:w-screen md:z-50" />
       <div
         class="absolute rounded-full
-      -translate-x-1/2 -translate-y-1/2 pointer-events-none
-      blur-3xl"
+      -translate-x-1/2 -translate-y-1/2 pointer-events-none z-50
+      "
         :style="
           {left: `${x}px`
            , top:`${y}px`
-           , width: '200px'
-           , height: '200px'
-           , background: 'radial-gradient(circle, rgba(214, 214, 214, 1) 0%, rgba(166, 166, 166, 1) 100%)'
+           , width: '10px'
+           , height: '10px'
+           , background: '#00FFFF'
+          }"
+      />
+      <div
+        class="absolute rounded-full
+      -translate-x-1/2 -translate-y-1/2 pointer-events-none z-50
+      "
+        :style="
+          {left: `${x}px`
+           , top:`${y}px`
+           , width: '40px'
+           , height: '40px'
+           , background: ''
+           , border: '1px solid black'
           }"
       />
       <div class="flex-1">

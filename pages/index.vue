@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <div class="bg-gray-800">
+    <div class="bg-gray-800 md:pt-20">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col sm:flex-row items-center">
         <div class="w-full sm:w-1/2 pr-8">
           <h2 class="text-4xl font-semibold text-white mb-4">
@@ -13,7 +13,7 @@
             <br>
           </p>
         </div>
-        <div class="w-full mb:w-1/2 px-10 py-10 sm:w-1/2 sm:mt-0">
+        <div class="relative w-full px-10 py-10 sm:w-1/2 sm:mt-0">
           <Swiper v-bind="swiperConfig">
             <SwiperSlide><img src="~/assets/images/metwo.jpg"></SwiperSlide>
             <SwiperSlide><img src="~/assets/images/kbk.jpg"></SwiperSlide>
@@ -21,8 +21,10 @@
             <SwiperSlide><img src="~/assets/images/mario.jpg"></SwiperSlide>
 
             <SwiperController direction="上面一位" />
-            <SwiperController direction="下面一位" />
+            <SwiperController2 direction="下面一位" />
           </Swiper>
+          <Icon name="fxemoji:fatherchristmas" class="absolute z-10 left-6 bottom-16 -rotate-45" width="35" height="35" />
+          <Icon name="streamline-emojis:christmas-tree" class="absolute z-10 left-28 bottom-16 -rotate-45" width="35" height="35" />
         </div>
       </div>
     </div>
@@ -48,7 +50,7 @@
             </p>
           </div>
         </div>
-        <div class="bg-purple-100 rounded-lg shadow-lg overflow-hidden relative md:bottom-10">
+        <div class="bg-purple-100 relative rounded-lg shadow-lg overflow-hidden md:bottom-10">
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-4">
               Section 2
@@ -103,6 +105,7 @@
     <NuxtLink to="https://tailwindcomponents.com/component/button-hover-effects" class="border-2 border-black">
       這裡有css tailwind特效網址
     </NuxtLink>
+    <UIComponentSlideLeft />
   </div>
 </template>
 
@@ -133,5 +136,13 @@ const swiperConfig = {
 <style scoped>
 .container {
   max-width: 1200px;
+}
+img {
+  --s: 10px; /* control the size */
+  padding: var(--s);
+  border: calc(2*var(--s)) solid #ff040400;
+  outline: 1px solid green;
+  outline-offset: calc(-1*var(--s));
+  background: conic-gradient(from 90deg at 1px 1px,white 25%,red 0);
 }
 </style>

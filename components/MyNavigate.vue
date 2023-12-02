@@ -36,7 +36,7 @@
     </div>
     <div
       v-show="isMobileMenuOpen"
-      class="md:hidden absolute right-0 top-20 bg-white rounded shadow-lg z-200 w-full"
+      class="md:hidden static right-0 top-20 bg-white shadow-lg w-full"
     >
       <ul class="py-2">
         <li><a href="#" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200">文章</a></li>
@@ -68,7 +68,6 @@ export default {
       } else {
         this.$refs.navigationBoss.classList.remove('md:py-10')
       }
-      rolling = (window.scrollY > 0)
       console.log(window.scrollY)
     }
   }

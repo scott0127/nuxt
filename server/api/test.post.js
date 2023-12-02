@@ -1,4 +1,5 @@
-export default defineEventHandler((event) => {
+/* eslint-disable @typescript-eslint/no-unused-vars */
+export default defineEventHandler((_event) => {
   return {
     ok: true,
     message: '測試 [POST] /api/test'

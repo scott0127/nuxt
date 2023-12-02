@@ -9,9 +9,9 @@ export default defineNuxtConfig({
     buildAssetsDir: '/assets/_nuxt'
   },
   modules: ['@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
     'nuxt-icon',
+    '@nuxt/ui',
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt', 'nuxt-swiper'],
   swiper: {

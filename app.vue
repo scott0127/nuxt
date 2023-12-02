@@ -1,5 +1,6 @@
 <template>
   <NuxtLayout>
+    <CustomLoading />
     <NuxtPage />
     <!--<div class="mt-8 flex items-center">
       <input
