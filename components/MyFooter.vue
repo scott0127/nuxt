@@ -1,5 +1,5 @@
 <template>
-  <div class="h-1/3 bg-[url('~/assets/images/pxfuel.jpg')]  bg-fixed bg-cover text-white">
+  <div class="h-1/3 bg-[url('~/assets/images/starnight.jpg')]  bg-fixed bg-cover text-white pb-10">
     <div class="flex flex-row container px-4 sm:px-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-1 sm:gap-36">
       <div class="footer-left col-span-1 sm:col-span-2 mt-16">
         <h4 class="text-lg font-bold mb-4 inline-block">

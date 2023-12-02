@@ -10,7 +10,7 @@
     </div>
     <DogComponent ref="doggy" class="hidden md:block move-dog dog" />
     <div class="flex justify-between items-center px-4 py-8 md:px-6 md:py-8 mb-0">
-      <div ref="mic" class="flex items-center absolute left-40">
+      <div ref="mic" class="flex items-center absolute md:left-80 hover:animate-bounce ">
         <NuxtLink to="/" class="NuxtLink text-xl font-bold" style="color: #B0A695;">
           回到米奇網首頁
         </NuxtLink>

@@ -6,8 +6,8 @@ const { x, y } = useMouse()
 </script>
 
 <template>
-  <div class="bg-sky-100 flex flex-col overflow-hidden relative" @scroll="checkScrollState">
-    <div>
+  <div class="bg-white flex flex-col overflow-hidden relative" @scroll="checkScrollState">
+    <div class="">
       <MyNavigate class="md:fixed md:w-screen md:z-50" />
       <div
         class="absolute rounded-full
@@ -34,8 +34,8 @@ const { x, y } = useMouse()
            , border: '1px solid black'
           }"
       />
-      <div class="flex-1">
-        <div class="min-h-screen">
+      <div class="bg-[url('~/assets/images/back.jpg')]  bg-fixed">
+        <div class="min-h-screen border-2 md:flex md:justify-center">
           <slot />
         </div>
       </div>

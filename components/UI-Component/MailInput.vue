@@ -8,11 +8,11 @@
     <UFormGroup
       size="xl"
     >
-      <p class="text-lime-400 pb-2">
+      <p class="text-white pb-2 font-Caveat">
         你可以在這裡輸入你的信箱<br>我會透過mail聯絡您
       </p>
       <UInput placeholder="哩ㄟ信箱@example.com" icon="i-heroicons-envelope" class="w-80" />
-      <UButton class="absolute right-56 bottom-9">
+      <UButton class="absolute right-56" style="bottom: 3%;">
         送
       </UButton>
       <p class="text-white">

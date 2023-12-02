@@ -65,7 +65,6 @@ export default {
       } else {
         this.$refs.dogboss.classList.remove('scale-150')
       }
-      rolling = (window.scrollY > 0)
       console.log(window.scrollY)
     }
   }
