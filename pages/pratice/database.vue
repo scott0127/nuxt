@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-80">
     <input id="name" v-model="formData.name" type="text" placeholder="请输入名字">
     <button @click="submit">
       創建database

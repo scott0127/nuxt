@@ -14,8 +14,13 @@ module.exports = {
         Kalam: ['Kalam', 'cursive'],
         LondrinaShadow: ['Londrina Shadow', 'sans-serif'],
         Playpen: ['Playpen Sans', 'cursive'],
-        Willfteka: ['Willfteka', 'sans-serif']
+        Willfteka: ['Willfteka', 'sans-serif'],
+        Playfair: ['Playfair Display', 'serif'],
+        Chinese: ['Noto Sans TC', 'sans-serif']
       }
     }
-  }
+  },
+  plugins: [
+    require('tailwindcss-animated')
+  ]
 }

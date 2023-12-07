@@ -10,8 +10,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap');
 @import url('https://fonts.cdnfonts.com/css/new-super-mario-font-u');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url('https://fonts.cdnfonts.com/css/willfteka');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');

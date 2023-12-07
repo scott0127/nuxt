@@ -1,24 +1,25 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <div class="md:mt-20 rounded-3xl mb-20 w-full" style="background-color: #DABEA7;">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col sm:flex-row items-center">
-        <div class="w-full sm:w-1/2 pr-8 pl-20">
-          <h2 class="text-4xl font-semibold text-stone-700 mb-4">
+    <div class="md:mt-20 rounded-3xl sm:mb-8  w-full" style="background-color: ;">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center border-none border-black">
+        <div class="w-full sm:w-full lg:scale-150 md:pl-20 pl-12 sm:ml-10 xl:ml-0 border-none border-black ">
+          <h2 class="xl:text-4xl sm:text-4xl sm:text-white xl:text-stone-700 text-3xl font-semibold text-stone-700 mb-4">
             Welcome to My Blog<br>
-            這邊是<span class="text-white bg-stone-700">林米奇的第一站</span><br>部落格
+            <span class="leading-relaxed bg-white sm:text-stone-700">這邊是<span class="text-white bg-stone-700">林米奇的第一站</span></span><br>
+            <span class="">部落格</span>
           </h2>
-          <p class="text-gray-900 text-lg leading-relaxed">
+          <p class="text-white text-lg leading-relaxed">
             這裡目前還很無聊啥都沒有，<br>但可以幫我點個讚我會很開心x
+            <br>我用RWD用到快鼠掉嘞
             <br>
           </p>
         </div>
-        <div class="relative w-full px-10 py-10 sm:w-1/2 sm:mt-0">
-          <Swiper v-bind="swiperConfig">
+        <div class="relative w-full px-10 sm:py-10 sm:w-1/2 sm:mt-0">
+          <Swiper v-bind="swiperConfig" class="mt-20">
             <SwiperSlide><img src="~/assets/images/metwo.jpg" class="img rounded-lg"></SwiperSlide>
-            <SwiperSlide><img src="~/assets/images/kbk.jpg" class="img rounded-lg"></SwiperSlide>
+            <SwiperSlide><img src="~/assets/images/uni.jpg" class="img rounded-lg"></SwiperSlide>
             <SwiperSlide><img src="~/assets/images/camera.jpg" class="img rounded-lg"></SwiperSlide>
-            <SwiperSlide><img src="~/assets/images/mario.jpg" class="img rounded-lg"></SwiperSlide>
 
             <SwiperController direction="上面一位" />
             <SwiperController2 direction="下面一位" />
@@ -28,103 +29,51 @@
         </div>
       </div>
     </div>
-    <div class="bg-white border-2 border-white mb-20 relative" style="width:1100px;height: 570px;">
-      <div class="border-2 border-black w-1/2 h-full">
-        <img src="~/assets/images/aigen.png" class="w-1/2 h-full absolute">
-        <div style="width:600px;height: 155px;left: 40%;top: 10%;" class="absolute">
-          <div style="width:520px;height: 70px;" class="bg-gray-300 mb-4 flex items-center justify-center">
-            <p class="text-3xl text-white" style="font-weight: bold;">
-              Creativity is intelligence having fun.
-            </p>
-          </div>
-          <div style="width:480px;height: 70px;" class="bg-gray-300 ml-2" />
-        </div>
-        <div style="width:530px;height: 380px;left: 50%;top: 10%;" class="absolute border-2 border-black">
-          <div style="width:470px;height: 105px;left: 0%;top: 40%;" class="absolute border-2 border-black mt-12 flex items-center">
-            <p class="pl-4 font-Playpen">
-              A three-part resource to walk you through exploring<br>
-              what a simple and spacious business actually looks<br>
-              like for you and how you can make it your reality too.
-            </p>
-          </div>
-          <div style="width:470px;height: 55px;left: 0%;top: 70%;" class="absolute border-2 border-black mt-12" />
-        </div>
-      </div>
-    </div>
+    <IndexComponertsMidContent class="sm:left-28 xl:left-0" />
+
     <div
-      id="暫時block"
-      class="w-full md:mb-10 rounded-3xl"
+      id="暫時block暫時被我隱藏"
+      class="w-full md:mb-10 md:mt-0 rounded-3xl mt-60 mb-32 hidden"
       style="border: white  10px;height: 370px; border-style: ridge;
 border-color: #e8e8e8 #f5f5f5 #f5f5f5 #e8e8e8;
 border-width: 10px;"
-    />
-    <ShareBar />
+    >
+      <UIComponentLinkMap />
+    </div>
+    <div class="border-none border-black xl:left-0 scale-50 sm:scale-100 mt-60 sm:mt-0">
+      <ShareBar style="scale: 1.5;" class="absolute top-80 -left-8 sm:top-6 sm:right-24 lg:top-6 lg:right-20 lg:left-1/2 sm:scale-75 sm:mr-8 xl:scale-100 xl:mr-0" />
+      <div
+        style="width:340px;height: 70px;"
+        class="bg-black flex items-center justify-center mb-4 sm:ml-20 xl:ml-0
+      absolute sm:relative top-52 -left-40 sm:top-0 sm:left-0"
+      >
+        <p class="text-3xl text-white font-semibold" style="font-weight: bold;">
+          Press <span class="text-green-400">Spotify</span>
+        </p>
+      </div>
+      <div
+        style="width:400px;height: 70px;"
+        class="bg-black flex items-center justify-center
+      sm:ml-20 xl:ml-0 absolute sm:relative top-52 left-52 sm:left-0 sm:top-0"
+      >
+        <p class="text-3xl text-white font-semibold" style="font-weight: bold;">
+          Listen My favorite playlist
+        </p>
+      </div>
+    </div>
+
     <!-- Sections -->
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <h2 class="text-4xl font-semibold mb-20">
-        下次更新這裡，我在不睡覺要死嘞<br>
-      </h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        <div class="bg-blue-100 rounded-lg shadow-lg overflow-hidden">
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-4">
-              Section 1
-            </h3>
-            <p class="text-gray-600">
-              這邊很醜，我知道，但我不會改x<br> 我下次改
-            </p>
-          </div>
-        </div>
-        <div class="bg-purple-100 relative rounded-lg shadow-lg overflow-hidden md:bottom-10">
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-4">
-              Section 2
-            </h3>
-            <p class="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id iaculis justo.
-            </p>
-          </div>
-        </div>
-        <div class="bg-green-100 rounded-lg shadow-lg overflow-hidden">
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-4">
-              Section 3
-            </h3>
-            <p class="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id iaculis justo.
-            </p>
-          </div>
-        </div>
-        <div class="bg-yellow-100 rounded-lg shadow-lg overflow-hidden">
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-4">
-              Section 4
-            </h3>
-            <p class="text-gray-600">
-              asdsadasdsadsagfadnfiuhjkiWFJKLKJHKJ
-            </p>
-          </div>
-        </div>
-        <div class="bg-red-100 rounded-lg shadow-lg overflow-hidden relative md:top-10">
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-4">
-              Section 5
-            </h3>
-            <p class="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id iaculis justo.
-            </p>
-          </div>
-        </div>
-        <div class="bg-pink-100 rounded-lg shadow-lg overflow-hidden">
-          <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-4">
-              Section 6
-            </h3>
-            <p class="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id iaculis justo.
-            </p>
-          </div>
-        </div>
+    <div class="border-none border-black container  sm:my-32 sm:scale-75 lg:scale-90 xl:scale-100 scale-75">
+      <div class="flex flex-row items-center space-x-3 pt-5 pb-8">
+        <Icon name="mdi:star-three-points-outline" size="2em" class="text-white dark:text-zinc-300  " />
+        <h2 class="text-4xl font-semibold text-white dark:text-zinc-300   ">
+          Recent Post
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 sm:gap-14">
+        <UIComponentCardComponet />
+        <UIComponentCardComponet />
+        <UIComponentCardComponet />
       </div>
     </div>
     <NuxtLink to="https://tailwindcomponents.com/component/button-hover-effects" class="border-2 border-black">
@@ -134,7 +83,6 @@ border-width: 10px;"
 </template>
 
 <script setup>
-
 const swiperConfig = {
   modules: [
     SwiperNavigation,
@@ -160,13 +108,5 @@ const swiperConfig = {
 <style scoped>
 .container {
   max-width: 1200px;
-}
-.img {
-  --s: 10px; /* control the size */
-  padding: var(--s);
-  border: calc(2*var(--s)) solid #ff040400;
-  outline: 1px solid green;
-  outline-offset: calc(-1*var(--s));
-  background: conic-gradient(from 90deg at 1px 1px,white 25%,red 0);
 }
 </style>

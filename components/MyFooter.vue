@@ -1,6 +1,6 @@
 <template>
   <div class="h-1/3 bg-[url('~/assets/images/starnight.jpg')]  bg-fixed bg-cover text-white pb-10">
-    <div class="flex flex-row container px-4 sm:px-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-1 sm:gap-36">
+    <div class="flex flex-row container px-4 sm:px-6 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-1 sm:gap-20 sm:scale-75 lg:gap-36 lg:scale-90 xl:scale-100">
       <div class="footer-left col-span-1 sm:col-span-2 mt-16">
         <h4 class="text-lg font-bold mb-4 inline-block">
           <p class="border-b-2 border-cyan-400 hover:border-purple-400">
@@ -37,7 +37,7 @@
         </h4>
       </div>
 
-      <div class="footer-right hidden sm:block border-l-8 border-double pl-4 sm:pl-14 ml-8 mt-8 h-4/5">
+      <div class="footer-right hidden sm:block border-l-8 border-double pl-4 sm:pl-14 sm:mr-0 xl:ml-8 mt-8 h-4/5">
         <div class="flex flex-col gap-2 whitespace-nowrap mt-6">
           <UIComponentMailInput />
         </div>

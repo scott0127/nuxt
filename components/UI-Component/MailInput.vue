@@ -8,15 +8,12 @@
     <UFormGroup
       size="xl"
     >
-      <p class="text-white pb-2 font-Caveat">
+      <p class="text-white pb-2 font-Chinese text-xl antialiased">
         你可以在這裡輸入你的信箱<br>我會透過mail聯絡您
       </p>
       <UInput placeholder="哩ㄟ信箱@example.com" icon="i-heroicons-envelope" class="w-80" />
-      <UButton class="absolute right-56" style="bottom: 3%;">
-        送
-      </UButton>
-      <p class="text-white">
-        If you want to contact the author, you can enter your email here.
+      <p class="text-white antialiased">
+        If you want to contact the author,<br> you can enter your email here.
       </p>
     </UFormGroup>
   </div>
