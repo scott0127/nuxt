@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-24 w-full mt-40">
+  <div class="bg-white py-24 w-11/12 mt-40">
     <div class="">
       <h1 class="text-6xl font-semibold text-yellow-400">
         大家好！我是 pakkkk

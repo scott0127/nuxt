@@ -17,7 +17,8 @@ export default defineNuxtConfig({
     '@pinia-plugin-persistedstate/nuxt',
     'nuxt-swiper',
     '@nuxt/image',
-    'nuxt-vuefire'
+    'nuxt-vuefire',
+    '@nuxt/content'
   ],
   vuefire: {
     config: {

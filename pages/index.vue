@@ -11,7 +11,8 @@
           </h2>
           <p class="text-white text-lg leading-relaxed">
             這裡目前還很無聊啥都沒有，<br>但可以幫我點個讚我會很開心x
-            <br>我用RWD用到快鼠掉嘞
+            <br>站長是一個熱愛學習的人，<br>喜歡學習新的事物，<br>也喜歡分享自己的學習心得，<br>如果你也喜歡學習，
+            歡迎你來到這裡，<br>我們一起學習吧！<br>Recently Challenge <br> YOLOV8 Nuxt Vue 大專生計畫
             <br>
           </p>
         </div>

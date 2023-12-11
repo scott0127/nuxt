@@ -25,7 +25,7 @@
         <ul class="flex space-x-20 font-mono text-3xl">
           <li><a href="article" class="">Article</a></li>
           <li><a href="#" class="">Tutorial</a></li>
-          <li><a href="#" class="">About</a></li>
+          <li><a href="about" class="">About</a></li>
           <li><a href="#" class="">Categories</a></li>
         </ul>
       </div>
@@ -44,7 +44,7 @@
       <ul class="py-2">
         <li><a href="article" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200">Article</a></li>
         <li><a href="#" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200">Tutorial</a></li>
-        <li><a href="#" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200">About</a></li>
+        <li><a href="about" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200">About</a></li>
         <li><a href="#" class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-200">Categories</a></li>
       </ul>
     </div>
