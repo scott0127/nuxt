@@ -1,1 +1,0 @@
-import{z as o}from"./entry.8913762f.js";import"./swiper-vue.c79929cc.js";const r=o(()=>{Math.random()>.5&&console.log("來自random-direct中間件，重新導向至 /count"),console.log("啥都沒發生by 中間件")});export{r as default};
