@@ -54,7 +54,7 @@
               When life encounters become the inspiration for my creations and designs.<br>
             </p>
           </div>
-          <div style="width:470px;height: 55px;left: 0%;top: 60%;" class="absolute border-none border-black mt-12">
+          <div style="width:470px;height: 55px;left: 0%;top: 60%;" class="absolute border-none border-black md:mt-12 mt-16">
             <button
               class="border-4 border-white text-white hover:text-black hover:border-black font-Playpen font-bold py-2 px-4 rounded inline-flex items-center ml-16 mt-16 justify-center"
               style="width: 210px; height: 55px;"

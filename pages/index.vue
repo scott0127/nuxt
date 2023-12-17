@@ -11,7 +11,7 @@
           </h2>
           <p class="text-white text-lg leading-relaxed">
             這裡目前還很無聊啥都沒有，<br>但可以幫我點個讚我會很開心x
-            <br>站長是一個熱愛學習的人，<br>喜歡學習新的事物，<br>也喜歡分享自己的學習心得，<br>如果你也喜歡學習，
+            <br>站長是一個熱愛學習的人，<br>喜歡學習新的事物，<br><span class="text-purple-500">最近更新了About!!!</span><br>如果你也喜歡學習，
             歡迎你來到這裡，<br>我們一起學習吧！<br>Recently Challenge <br> YOLOV8 Nuxt Vue 大專生計畫
             <br>
           </p>
@@ -25,8 +25,8 @@
             <SwiperController direction="上面一位" />
             <SwiperController2 direction="下面一位" />
           </Swiper>
-          <Icon name="fxemoji:fatherchristmas" class="absolute z-10 left-6 bottom-16 -rotate-45" width="35" height="35" />
-          <Icon name="streamline-emojis:christmas-tree" class="absolute z-10 left-28 bottom-16 -rotate-45" width="35" height="35" />
+          <Icon name="fxemoji:fatherchristmas" class="absolute z-10 left-6 bottom-8 md:bottom-16 -rotate-45" width="35" height="35" />
+          <Icon name="streamline-emojis:christmas-tree" class="absolute z-10 left-28 bottom-8 md:bottom-16 -rotate-45" width="35" height="35" />
         </div>
       </div>
     </div>
@@ -66,7 +66,7 @@ border-width: 10px;"
     <!-- Sections -->
     <div class="border-none border-black container  sm:my-32 sm:scale-75 lg:scale-90 xl:scale-100 scale-75">
       <div class="flex flex-row items-center space-x-3 pt-5 pb-8">
-        <Icon name="mdi:star-three-points-outline" size="2em" class="text-white dark:text-zinc-300  " />
+        <Icon name="line-md:star-pulsating-twotone-loop" size="2em" class="text-black bg-stone-300 dark:text-zinc-300  " />
         <h2 class="text-4xl font-semibold text-white dark:text-zinc-300   ">
           Recent Post
         </h2>

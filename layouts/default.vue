@@ -10,19 +10,21 @@ const { x, y } = useMouse()
     <div class="">
       <MyNavigate class="md:fixed md:w-screen md:z-50" />
       <div
-        class="absolute rounded-full
+        class="absolute rounded-full hidden md:block
       -translate-x-1/2 -translate-y-1/2 pointer-events-none z-50
       "
         :style="
           {left: `${x}px`
            , top:`${y}px`
-           , width: '10px'
-           , height: '10px'
-           , background: '#00FFFF'
+           , width: '40px'
+           , height: '40px'
+           , //background: '#00FFFF'
           }"
-      />
+      >
+        <Icon name="line-md:sunny-outline-twotone-loop" width="50" height="50" />
+      </div>
       <div
-        class="absolute rounded-full
+        class="absolute rounded-full hidden
       -translate-x-1/2 -translate-y-1/2 pointer-events-none z-50
       "
         :style="
