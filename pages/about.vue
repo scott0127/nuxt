@@ -50,20 +50,20 @@
               </h1>
 
               <p class="mt-1 text-gray-500 dark:text-gray-300 text-2xl flex  bg-green-300 w-80">
-                <span class="m-auto text-white">學習的心得</span><br>
+                <span class="m-auto text-white">學習心得</span><br>
                 <img class="ml-2" src="~/assets/images/pencil.png" width="60" height="30">
               </p>
               <p class="mt-1 xl:ml-56 text-gray-500 dark:text-gray-300 text-2xl flex  bg-blue-300 w-80">
                 <img class="ml-2" src="~/assets/images/scenery.png" width="60" height="30">
-                <span class="m-auto text-white">喜歡的景點</span><br>
+                <span class="m-auto text-white">景點Scenery</span><br>
               </p>
               <p class="mt-1 text-gray-500 dark:text-gray-300 text-2xl flex  bg-sky-300 w-80">
-                <span class="m-auto text-white">美食的倩影</span><br>
+                <span class="m-auto text-white">美食Cuisine</span><br>
                 <img class="ml-2" src="~/assets/images/fastfood.png" width="60" height="30">
               </p>
               <p class="mt-1 xl:ml-56 text-gray-500 dark:text-gray-300 text-2xl flex  bg-stone-400 w-80">
                 <img class="ml-2" src="~/assets/images/coaching.png" width="60" height="30">
-                <span class="m-auto text-white">簡單的教學</span><br>
+                <span class="m-auto text-white">簡單教學</span><br>
               </p>
             </div>
           </div>
@@ -78,7 +78,7 @@
 
             <div class="mt-4 md:mx-4 md:mt-0 font-Chinese">
               <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                未來會有夜間模式呦
+                Next update夜間模式
               </h1>
 
               <p class="mt-3 text-gray-500 dark:text-gray-300 text-xl">

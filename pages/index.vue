@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Hero Section -->
-    <div class="md:mt-20 rounded-3xl sm:mb-8  w-full" style="background-color: ;">
+    <div class="md:mt-20 rounded-3xl sm:mb-8  w-full" >
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center border-none border-black">
         <div class="w-full sm:w-full lg:scale-150 md:pl-20 pl-12 sm:ml-10 xl:ml-0 border-none border-black ">
           <h2 class="xl:text-4xl sm:text-4xl sm:text-white xl:text-stone-700 text-3xl font-semibold text-stone-700 mb-4">
@@ -72,7 +72,7 @@ border-width: 10px;"
         </h2>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 sm:gap-14">
-        <UIComponentCardComponet />
+        <UIComponentCardComponet2 :slug="'/blog/tttt'" :image="'/images/back.jpg'" content="(content參數)" title="(title參數)"/>
         <UIComponentCardComponet />
         <UIComponentCardComponet />
       </div>

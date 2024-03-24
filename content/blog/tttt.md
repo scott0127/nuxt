@@ -10,5 +10,3 @@ Full amount of content beyond the more divider.
 
 <!-- Content of the page -->
 這是測試1號
-
-![my image](/img/shoted.jpg)

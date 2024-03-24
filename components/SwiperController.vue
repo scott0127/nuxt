@@ -5,7 +5,7 @@
   before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full
   before:w-0 before:bg-red-300 before:transition-all before:duration-500 hover:text-white
   hover:before:left-0 hover:before:w-full rounded-lg"
-    @click="direction === 'prev' ? swiper.slidePrev() : swiper.slideNext()"
+    @click="direction === 'prev' ? swiper.slideNext() : swiper.slidePrev()"
   >
     <span class="relative font-mono font-medium">{{ props.direction }}</span>
   </button>

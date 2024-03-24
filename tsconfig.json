@@ -1,5 +1,10 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
   "extends": "./.nuxt/tsconfig.json",
-  "#pwa":[".nuxt/types/pwa"]
+  "#pwa":[".nuxt/types/pwa"],
+  "include": [
+    "env.d.ts",
+    ".nuxt/nuxt.d.ts",
+    "**/*"
+  ]
 }

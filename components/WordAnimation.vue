@@ -14,7 +14,7 @@
         </div>
       </div>
       <p class=" text-black font-Chinese">
-        我要累鼠了但是有酷酷的跑馬燈 <a class="text-purple-500" href="scott5497ify@gmail.com">這邊點下去mail</a>
+        我要累鼠了但是有酷酷的跑馬燈 <a class="text-purple-500" href="mailto:scott5497ify@gmail.com">這邊點下去mail</a>
       </p>
     </div>
   </div>

@@ -4,7 +4,7 @@
     class="border-b-4 border-gray-300 bg-gray-200 overflow-hidden border-solid duration-200 relative"
     :class="{ 'md:py-10': !isScrolled, 'bg-white': isScrolled }"
   >
-    <div class="containerForCat move hidden md:block">
+    <div v-if="!CancelAnimal" class="containerForCat move hidden md:block">
       <div class="cat walking" />
     </div>
     <div class="flex justify-center items-center px-4 py-8 md:px-6 md:py-16 mb-0">
@@ -22,10 +22,20 @@
       </div>
       <div class="hidden md:block absolute sm:scale-50 sm:-right-36 lg:scale-75 lg:right-8 xl:right-24 xl:scale-100 border-none border-black ">
         <ul class="flex space-x-20 font-mono text-3xl">
-          <li><a href="article" class="">Article</a></li>
-          <li><a href="#" class="">Tutorial</a></li>
+          <li><a href="./article" class="">Article</a></li>
           <li><a href="about" class="">About</a></li>
-          <li><a href="#" class="">Categories</a></li>
+          <li><a href="#" class="" @click="signout">LogOut</a></li>
+          <li><a href="login" class="">Login</a></li>
+          <li>
+            <button @click="CancelAnimal = !CancelAnimal">
+              <p v-if="!CancelAnimal" class="hover:animate-shake hover:animate-infinite">
+                關閉小寵物<Icon name="icon-park-twotone:dog" />
+              </p>
+              <p v-if="CancelAnimal" class="hover:animate-wiggle hover:animate-infinite">
+                開啟小寵物<Icon name="icon-park-twotone:dog" />
+              </p>
+            </button>
+          </li>
         </ul>
       </div>
       <div class="md:hidden mr-80">
@@ -42,17 +52,17 @@
     <div v-show="isMobileMenuOpen" class="md:hidden static right-0 top-20 bg-white shadow-lg w-full animate-fade-right">
       <ul class="py-2 animate-fade-down font-Playpen font-bold">
         <li><a href="article" class="block px-8 py-2 text-sm text-gray-800 hover:bg-gray-200">Article</a></li>
-        <li><a href="#" class="block px-8 py-2 text-sm text-gray-800 hover:bg-gray-200">Tutorial</a></li>
         <li><a href="about" class="block px-8 py-2 text-sm text-gray-800 hover:bg-gray-200">About</a></li>
-        <li><a href="#" class="block px-8 py-2 text-sm text-gray-800 hover:bg-gray-200">Categories</a></li>
+        <li><a href="#" class="block px-8 py-2 text-sm text-gray-800 hover:bg-gray-200">LogOut</a></li>
+        <li><a href="login" class="block px-8 py-2 text-sm text-gray-800 hover:bg-gray-200">Login</a></li>
       </ul>
     </div>
-    <DogComponent ref="doggy" class="hidden md:block move-dog dog " />
-    <div v-if="samoOrigin" id="somoboss">
+    <DogComponent v-if="!CancelAnimal" ref="doggy" class="hidden md:block move-dog dog " />
+    <div v-if="samoOrigin&&!CancelAnimal" id="somoboss">
       <img ref="dogorigin" src="~/assets/images/dogrun.gif" class="scale-90 md:scale-100 move-samo absolute -bottom-6 md:bottom-0" style="scale: -1 1;">
       <img ref="dogshake" src="~/assets/images/dog.gif" class="scale-90 md:scale-100 move-samo-dog absolute -bottom-6 md:bottom-0" style="scale: -1 1;">
     </div>
-    <div v-else id="somoboss2">
+    <div v-else-if="!CancelAnimal" id="somoboss2">
       <img ref="dogorigin" src="~/assets/images/dogrun.gif" class="scale-90 md:scale-100 move-samo-run1 absolute -bottom-6 md:bottom-0" style="scale: -1 1;">
       <img ref="dogshake" src="~/assets/images/dogshake.gif" class="scale-90 md:scale-100 move-samo-run2 absolute -bottom-6 md:bottom-0" style="scale: -1 1;">
     </div>
@@ -66,6 +76,7 @@ export default {
     return {
       isMobileMenuOpen: false,
       isScrolled: false,
+      CancelAnimal: false,
       SpawnDog: false,
       samoOrigin: true,
       dogrun: true
@@ -93,6 +104,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style>

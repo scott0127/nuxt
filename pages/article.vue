@@ -1,9 +1,15 @@
 <template>
   <div class="bg-white py-24 w-11/12 mt-40">
-    <div class="">
+    <div class="flex flex-col items-center">
       <h1 class="text-6xl font-semibold text-yellow-400">
         大家好！我是 pakkkk
       </h1>
+      <UInput class="w-56 ml-8 my-4" v-model="value" color="cyan" placeholder="部落格測試"/>
+      <main class="border-2 border-green-500 w-4/5 flex  flex-col items-center">
+        <ContentDoc  :path="value">
+        </ContentDoc>
+      </main>
+      <p>用戶有:{{user["email"]}}</p>
       <button
         ref="openA"
         class="border-4 border-amber-700 border-dashed text-amber-700 hover:text-black hover:border-black font-Playpen font-bold py-2 rounded inline-flex items-center mb-4 justify-center"
@@ -67,4 +73,11 @@ const showTextarea = () => {
 }
 const title = ref('')
 const article = ref('')
+
+//down supabase
+const supabase = useSupabaseClient()
+const { data: { user } } = await supabase.auth.getUser()
+
+const value=ref('/blog')
+
 </script>

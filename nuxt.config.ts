@@ -18,7 +18,9 @@ export default defineNuxtConfig({
     'nuxt-swiper',
     '@nuxt/image',
     'nuxt-vuefire',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/supabase',
+    'arco-design-nuxt-module'
   ],
   vuefire: {
     config: {
@@ -29,6 +31,10 @@ export default defineNuxtConfig({
       messagingSenderId: '315398547712',
       appId: '1:315398547712:web:27a377e1579e5c3f87ebe5'
     }
+  },
+  supabase: {
+    url: process.env.SUPABASE_URL,
+    key: process.env.SUPABASE_KEY,
   },
   swiper: {
     modules: ['navigation', 'pagination', 'effect-creative']
