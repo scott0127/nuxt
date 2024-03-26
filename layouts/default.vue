@@ -50,7 +50,7 @@ const { x, y } = useMouse()
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
 
 .ddbody  {
-    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+  background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
   background-size:cover;
         -webkit-animation: slidein 100s;
         animation: slidein 100s;

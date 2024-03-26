@@ -10,8 +10,8 @@
             <span class="">部落格</span>
           </h2>
           <p class="text-white text-lg leading-relaxed">
-            這裡目前還很無聊啥都沒有，<br>但可以幫我點個讚我會很開心x
-            <br>站長是一個熱愛學習的人，<br>喜歡學習新的事物，<br><span class="text-purple-500">最近更新了About!!!</span><br>如果你也喜歡學習，
+            這裡目前還越來越多東西啦，<br>可以幫我點個讚我會很開心x
+            <br>站長是一個熱愛學習的人，<br>喜歡學習新的事物，<br><span class="text-purple-500">最近打算更新第一篇教學文</span><br>如果你也喜歡學習，
             歡迎你來到這裡，<br>我們一起學習吧！<br>Recently Challenge <br> YOLOV8 Nuxt Vue 大專生計畫
             <br>
           </p>
@@ -72,18 +72,18 @@ border-width: 10px;"
         </h2>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 sm:gap-14">
-        <UIComponentCardComponet2 :slug="'/blog/tttt'" :image="'/images/back.jpg'" content="(content參數)" title="(title參數)"/>
+        <UIComponentCardComponet2 :slug="article[2]['singlePage_route']" category="Oauth,nuxt,supabase" :image="article[2]['image_route']" :content="article[2]['content']" :title="article[2]['title']"/>
         <UIComponentCardComponet />
         <UIComponentCardComponet />
       </div>
     </div>
-    <NuxtLink to="https://tailwindcomponents.com/component/button-hover-effects" class="border-2 border-black">
-      這裡有css tailwind特效網址
-    </NuxtLink>
   </div>
 </template>
 
 <script setup>
+const value=ref('hh')
+const route=useRoute();
+const supabase = useSupabaseClient()
 const swiperConfig = {
   modules: [
     SwiperNavigation,
@@ -104,6 +104,9 @@ const swiperConfig = {
     }
   }
 }
+const { data: article, error } = await supabase
+  .from('article')
+  .select('*')
 </script>
 
 <style scoped>

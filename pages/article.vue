@@ -10,40 +10,43 @@
         </ContentDoc>
       </main>
       <p>用戶有:{{user["email"]}}</p>
-      <button
-        ref="openA"
-        class="border-4 border-amber-700 border-dashed text-amber-700 hover:text-black hover:border-black font-Playpen font-bold py-2 rounded inline-flex items-center mb-4 justify-center"
-        style="width: 210px; height: 55px;"
-        @click="showTextarea"
-      >
-        - Create Article -
-      </button>
-      <UForm :schema="schema" :state="state" class="space-y-4 border-2 border-black w-1/2" @submit="onSubmit">
-        <UFormGroup label="文章標題">
-          <UTextarea
-            v-if="show"
-            v-model="title"
-            :rows="1"
-            variant="outline"
-            class="w-[300px] mb-4"
-            color="red"
-            placeholder="這裡輸入文章標題喔"
-            autoresize
+
+      <a-form :model="form" :style="{ width: '600px' }" @submit="handleSubmit">
+        <a-form-item field="title" label="title">
+          <a-input
+            v-model="form.title"
+            placeholder="please enter your 標題..."
           />
-        </UFormGroup>
-        <UFormGroup label="建立文章內容">
-          <UTextarea
-            v-if="show"
-            v-model="article"
-            variant="outline"
-            class="w-[500px]"
-            color="indigo"
-            placeholder="這裡輸入文章內容喔"
-            autoresize
+        </a-form-item>
+        <a-form-item field="date" label="date">
+          <a-date-picker style="width: 200px;" v-model="form.date" />
+        </a-form-item>
+        <a-form-item field="content">
+          <a-input
+            v-model="form.content"
+            placeholder="please enter your 內容..."
           />
-        </UFormGroup>
-        <UFormGroup label="文章分類清單" />
-      </UForm>
+        </a-form-item>
+        <a-form-item field="img">
+          <a-input
+            v-model="form.img_route"
+            placeholder="please enter your img位置..."
+          />
+        </a-form-item>
+        <a-form-item field="sig">
+          <a-input
+            v-model="form.sig_route"
+            placeholder="please enter your 跳轉..."
+          />
+        </a-form-item>
+        <a-form-item>
+          <a-button html-type="submit">Submit</a-button>
+        </a-form-item>
+        {{form}}
+      </a-form>
+      <p>dsakudhgasuidukashgdukasgkdshakjdhjadh</p> 
+      <button @click="select">按下去</button>
+      <p class="w-52 h-52 border-2 border-yellow-500">{{article[0]}}</p>
       <CatrgoryList />
       <div>
         <pre>{{ docs[0] }}</pre>
@@ -72,7 +75,6 @@ const showTextarea = () => {
   openA.value.innerText = show.value ? 'Close' : 'Create Article' // 使用 openA.value 來訪問按鈕元素
 }
 const title = ref('')
-const article = ref('')
 
 //down supabase
 const supabase = useSupabaseClient()
@@ -80,4 +82,30 @@ const { data: { user } } = await supabase.auth.getUser()
 
 const value=ref('/blog')
 
+const form = reactive({
+      name: '',
+      date: '',
+      content: '',
+      img_route: '',
+      sig_route: '',
+});
+async function handleSubmit() {
+  const { data, error } = await supabase
+    .from('article')
+    .insert([
+      { date: form.date, 
+        title: form.title, 
+        content: form.content,
+        image_route: form.img_route,
+        singlePage_route:form.sig_route},
+    ])
+    .select()
+  if(error){
+    alert(error)
+  }
+}
+const { data: article, error } = await supabase
+  .from('article')
+  .select('*')
+  
 </script>

@@ -1,9 +1,9 @@
 <template>
   <div id="head" class="group border dark:border-gray-800  m-2 rounded-2xl overflow-hidden shadow-sm text-zinc-700 dark:text-zinc-300 scale-110">
-    <NuxtImg
+    <img
       class="border-2 border-white lg:h-48 md:h-36 w-full object-cover object-center rounded-t-2xl shadow-lg group-hover:scale-[1.02] transition-all duration-500"
       width="300"
-      src="/images/mick.png"
+      src="~/assets/images/mick.png"
     />
     <div class="px-3 pb-4 border-2 border-white bg-gray-100">
       <div class="text-black dark:text-zinc-300    pt-3 pb-2">

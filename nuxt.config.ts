@@ -1,6 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  ssr: false,
+  content:{
+    experimental: {
+      clientDB:true
+    }
+  },
   css: [
     '@/assets/css/main.css'
   ],
@@ -40,6 +46,6 @@ export default defineNuxtConfig({
     modules: ['navigation', 'pagination', 'effect-creative']
   },
   image: {
-    dir: 'assets'
-  }
+    domains: ['https://scott0127.github.io/nuxt/']
+  },
 })
