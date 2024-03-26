@@ -1,1 +1,0 @@
-import s from"./ContentSlot.8226acd7.js";import{d as o,an as u,c,g as f}from"./swiper-vue.1c54e604.js";import"./node.e4a9c3bc.js";const d=o({name:"Markdown",extends:s,setup(t){const{parent:n}=f(),{between:e,default:a}=u(),r=c(()=>typeof t.unwrap=="string"?t.unwrap.split(" "):["*"]);return{fallbackSlot:a,tags:r,between:e,parent:n}}});export{d as default};
