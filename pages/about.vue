@@ -87,12 +87,12 @@
             </div>
           </div>
         </div>
-
+        
         <div class="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
           <img class="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full" src="~/assets/images/cat.jpg" alt="">
         </div>
       </div>
-
+      
       <hr class="border-gray-200 my-12 dark:border-gray-700">
       <div class="grid grid-cols gap-8 md:grid-cols-6 lg:grid-cols-5">
         <div class="flex items-center justify-center  md:col-span-2 lg:col-span-1">

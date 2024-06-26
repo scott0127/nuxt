@@ -5,7 +5,10 @@ export default defineNuxtConfig({
   content:{
     experimental: {
       clientDB:true
-    }
+    },
+    highlight: {
+      theme: "one-dark-pro",
+    },
   },
   css: [
     '@/assets/css/main.css'
@@ -26,7 +29,7 @@ export default defineNuxtConfig({
     'nuxt-vuefire',
     '@nuxt/content',
     '@nuxtjs/supabase',
-    'arco-design-nuxt-module'
+    'arco-design-nuxt-module',
   ],
   vuefire: {
     config: {

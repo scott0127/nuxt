@@ -30,8 +30,10 @@
         </div>
       </div>
     </div>
+    
+    <iframe class="mb-16" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2YPet8qyOLDQ55qaHn1uTV?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     <IndexComponertsMidContent class="sm:left-28 xl:left-0" />
-
+    
     <div
       id="暫時block暫時被我隱藏"
       class="w-full md:mb-10 md:mt-0 rounded-3xl mt-60 mb-32 hidden"
@@ -77,6 +79,21 @@ border-width: 10px;"
         <UIComponentCardComponet />
       </div>
     </div>
+
+    <div class="flex flex-row items-center space-x-3 pt-5 pb-8">
+      <Icon name="line-md:star-pulsating-twotone-loop" size="2em" class="text-black bg-stone-300 dark:text-zinc-300  " />
+      <h2 class="text-4xl font-semibold text-white dark:text-zinc-300   ">
+        米奇GPT(目前沒有對外域名，暫時無效)
+      </h2>
+    </div>
+    <iframe 
+      class="border-4 border-stone-600 rounded-lg bg-white mb-8"
+      src="http://jybk.jybk/chatbot/9XwUTPzlUCGf1KuL"
+      style="width: 100%; min-height: 700px"
+      frameborder="0"
+      allow="microphone">
+    </iframe>
+    
   </div>
 </template>
 

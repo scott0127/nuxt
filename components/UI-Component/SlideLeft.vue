@@ -5,7 +5,7 @@ const isOpen = ref(false)
 <template>
   <div>
     <UButton color="black" variant="ghost" @click="isOpen = true">
-      <Icon name="logos:spotify-icon" width="50" height="50" class="hover:animate-spin scale-125 duration-300" />
+      <Icon name="logos:spotify-icon" width="50" height="50" class="animate-spin scale-125 duration-300" />
     </UButton>
     <USlideover v-model="isOpen">
       <UButton color="red" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="border-2 border-green-600" @click="isOpen = false" />

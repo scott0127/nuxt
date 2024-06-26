@@ -1,19 +1,19 @@
 <template>
-  <div class="bg-white py-24 w-3/5">
-    <div class="flex flex-col items-center">
-      <h1 class="text-8xl font-semibold text-red-500">
-        EXIST
-      </h1>
-      <p class="my-8 text-3xl text-gray-800">
-        BLOG SINGLE PAGE
-      </p>
-      {{'nuxt'+route.path}}
-      <main class="border-2 border-green-500 w-full flex  flex-col items-center">
-        <ContentDoc  :path="'/nuxt'+route.path">
-        </ContentDoc>
-      </main>
-
+  <div class="bg-white pt-48 pb-8 w-full grid place-items-center">
+    <div class="max-w-7xl w-full bg-white rounded-lg overflow-hidden">
+      <div class="px-8 py-6">
+        <h1 class="text-4xl font-semibold text-red-500 mb-4 text-center">
+          EXIST
+        </h1>
+        <p class="text-xl text-gray-600 text-center">
+          BLOG SINGLE PAGE<br>
+          {{ 'nuxt' + route.path }}
+        </p>
+      </div>
     </div>
+    <article class="w-max bg-white rounded-lg prose prose-blockquote:border-green-400 prose-blockquote:not-italic prose-quoteless">
+      <ContentDoc :path="'/nuxt' + route.path"></ContentDoc>
+    </article>
   </div>
 </template>
 

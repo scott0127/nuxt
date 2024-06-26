@@ -17,10 +17,19 @@ module.exports = {
         Willfteka: ['Willfteka', 'sans-serif'],
         Playfair: ['Playfair Display', 'serif'],
         Chinese: ['Noto Sans TC', 'sans-serif']
-      }
+      },
+      typography: {
+        quoteless: {
+          css: {
+            'blockquote p:first-of-type::before': { content: 'none' },
+            'blockquote p:first-of-type::after': { content: 'none' },
+          },
+        },
+      },
     }
   },
   plugins: [
-    require('tailwindcss-animated')
+    require('tailwindcss-animated'),
+    require('@tailwindcss/typography'),
   ]
 }
